@@ -1,0 +1,8 @@
+{
+  "appId": "com.gvbg.app",
+  "appName": "GVBG",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}
