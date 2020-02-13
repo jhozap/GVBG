@@ -3,6 +3,9 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-icon slot="start" name="home"></ion-icon>
+    </ion-buttons>
     <ion-title>
       Inicio
     </ion-title>
@@ -16,26 +19,32 @@
 <ion-content fullscreen>
   <div class="background">
     <h1 class="principal-title">GUÍA PARA LA ATENCIÓN DE CASOS DE VIOLENCIA BASADAS EN GÉNERO</h1>
-    <ion-slides pager="true" [options]="slideOpts">
+    <ion-slides pager="true" [options]="slideOpts" >
       <ion-slide>
-        <img src="../../assets/img/1.png" alt="Slide 1" srcset="" />
+        <img src="../../assets/img/1.png" alt="Slide 1" />
       </ion-slide>
       <ion-slide>
-        <img src="../../assets/img/2.png" alt="Slide 2" srcset="" />
+        <img src="../../assets/img/2.png" alt="Slide 2" />
       </ion-slide>
       <ion-slide>
-        <img src="../../assets/img/3.png" alt="Slide 3" srcset="" />
+        <img src="../../assets/img/3.png" alt="Slide 3" />
       </ion-slide>
       <ion-slide>
-        <img src="../../assets/img/4.png" alt="Slide 4" srcset="" />
+        <img src="../../assets/img/4.png" alt="Slide 4" />
       </ion-slide>
       <ion-slide>
-        <img src="../../assets/img/5.png" alt="Slide 5" srcset="" />
+        <img src="../../assets/img/5.png" alt="Slide 5" />
       </ion-slide>
     </ion-slides>
     <div class="link">
       <a routerLink="/rutas-institucionales">Rutas institucionales</a>
     </div>
-    
+    <div class="escudos">
+      <img src="../../assets/img/ponal.png" alt="" >
+      <img src="../../assets/img/telm.png" alt="">
+    </div>
+    <div class="final">
+      <p>“la no naturalización de comportamientos violentos, es un compromiso de la policía nacional de Colombia”</p>
+    </div>
   </div>
 </ion-content>

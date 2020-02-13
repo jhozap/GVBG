@@ -8,3 +8,23 @@
     padding: 1rem 0;
     text-align: center;
 }
+
+ion-slides {    
+    --bullet-background-active: var(--ion-color-success);
+}
+
+.escudos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    justify-items: center;    
+}
+
+.final {
+    & p {
+        font-style: italic;
+        text-align: center;
+        padding: 1rem;
+        color: #82828c;
+    }
+}
