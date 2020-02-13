@@ -53,9 +53,9 @@ ion-menu.md {
     border-radius: 4px;
 
     &.selected {
-      --background: rgba(var(--ion-color-primary-rgb), 0.14);
+      --background: rgba(var(--ion-color-success-rgb), 0.14);
       ion-icon {
-        color: var(--ion-color-primary);
+        color: var(--ion-color-success);
       }
     }
 
@@ -92,7 +92,7 @@ ion-menu.ios {
 
     &.selected {
       ion-icon {
-        color: var(--ion-color-primary);
+        color: var(--ion-color-success);
       }
     }
 
@@ -119,5 +119,9 @@ ion-note {
 }
 
 ion-item.selected {
-  --color: var(--ion-color-primary);
+  --color: var(--ion-color-success);
+}
+
+.my-custom-menu {
+  --width: 95vw;
 }
