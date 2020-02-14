@@ -6,34 +6,35 @@
     <ion-buttons slot="end">
       <ion-icon slot="start" name="home"></ion-icon>
     </ion-buttons>
-    <ion-title>
-      Inicio
-    </ion-title>
+    <!-- <ion-title>Inicio</ion-title> -->
   </ion-toolbar>
 </ion-header>
-<!-- 
-<ion-content fullscreen>
 
-</ion-content> -->
-
-<ion-content fullscreen>
+<ion-content>
   <div class="background">
-    <h1 class="principal-title">GUÍA PARA LA ATENCIÓN DE CASOS DE VIOLENCIA BASADAS EN GÉNERO</h1>
-    <ion-slides pager="true" [options]="slideOpts" >
+    <h1 class="principal-title">
+      GUÍA PARA LA ATENCIÓN DE CASOS DE VIOLENCIA BASADAS EN GÉNERO
+    </h1>
+    <ion-slides pager="true" [options]="slideOpts">
       <ion-slide *ngFor="let slide of slides">
         <img [src]="slide.src" [alt]="slide.alt" />
-      </ion-slide>     
+      </ion-slide>
     </ion-slides>
     <div class="link">
-      <ion-button  routerLink="/rutas-institucionales" fill="outline">Rutas institucionale</ion-button>
+      <ion-button routerLink="/rutas-institucionales" fill="outline"
+        >Rutas institucionale</ion-button
+      >
       <!-- <a routerLink="/rutas-institucionales">Rutas institucionales</a> -->
     </div>
     <div class="escudos">
-      <img src="../../assets/img/ponal.png" alt="" >
-      <img src="../../assets/img/telm.png" alt="">
+      <img src="../../assets/img/ponal.png" alt="" />
+      <img src="../../assets/img/telm.png" alt="" />
     </div>
     <div class="final">
-      <p>“la no naturalización de comportamientos violentos, es un compromiso de la policía nacional de Colombia”</p>
+      <p>
+        “la no naturalización de comportamientos violentos, es un compromiso de
+        la policía nacional de Colombia”
+      </p>
     </div>
   </div>
 </ion-content>

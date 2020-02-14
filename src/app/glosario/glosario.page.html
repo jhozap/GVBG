@@ -6,20 +6,23 @@
     <ion-buttons slot="end">
       <ion-icon slot="start" name="help"></ion-icon>
     </ion-buttons>
-    <ion-title>Glosario</ion-title>
+    <!-- <ion-title>Glosario</ion-title> -->
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <div class="background">
+    <h1 class="principal-title">
+      Glosario
+    </h1>
     <ion-card *ngFor="let item of glosario">
-      <img [src]="item.image">
+      <img [src]="item.image" />
       <ion-card-header>
         <ion-card-title>{{ item.word }}</ion-card-title>
       </ion-card-header>
       <ion-card-content>
         <p>{{ item.definition }}</p>
-        <br>
+        <br />
         <div *ngIf="item.detail">
           <table>
             <tr *ngFor="let dataDet of item.detailData">
@@ -33,6 +36,6 @@
           </table>
         </div>
       </ion-card-content>
-    </ion-card>    
+    </ion-card>
   </div>
 </ion-content>
