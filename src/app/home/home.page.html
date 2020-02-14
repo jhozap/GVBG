@@ -20,24 +20,13 @@
   <div class="background">
     <h1 class="principal-title">GUÍA PARA LA ATENCIÓN DE CASOS DE VIOLENCIA BASADAS EN GÉNERO</h1>
     <ion-slides pager="true" [options]="slideOpts" >
-      <ion-slide>
-        <img src="../../assets/img/1.png" alt="Slide 1" />
-      </ion-slide>
-      <ion-slide>
-        <img src="../../assets/img/2.png" alt="Slide 2" />
-      </ion-slide>
-      <ion-slide>
-        <img src="../../assets/img/3.png" alt="Slide 3" />
-      </ion-slide>
-      <ion-slide>
-        <img src="../../assets/img/4.png" alt="Slide 4" />
-      </ion-slide>
-      <ion-slide>
-        <img src="../../assets/img/5.png" alt="Slide 5" />
-      </ion-slide>
+      <ion-slide *ngFor="let slide of slides">
+        <img [src]="slide.src" [alt]="slide.alt" />
+      </ion-slide>     
     </ion-slides>
     <div class="link">
-      <a routerLink="/rutas-institucionales">Rutas institucionales</a>
+      <ion-button  routerLink="/rutas-institucionales" fill="outline">Rutas institucionale</ion-button>
+      <!-- <a routerLink="/rutas-institucionales">Rutas institucionales</a> -->
     </div>
     <div class="escudos">
       <img src="../../assets/img/ponal.png" alt="" >

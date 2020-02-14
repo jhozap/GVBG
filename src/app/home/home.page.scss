@@ -5,7 +5,7 @@
 }
 
 .link {
-    padding: 1rem 0;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -18,13 +18,14 @@ ion-slides {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
     justify-items: center;    
+    margin-bottom: 2rem;
 }
 
 .final {
     & p {
         font-style: italic;
         text-align: center;
-        padding: 1rem;
+        padding: 0 1rem;
         color: #82828c;
     }
 }
