@@ -13,22 +13,30 @@
 <ion-content>
   <div class="background">
     <h1 class="principal-title">
-      GUÍA PARA LA ATENCIÓN DE CASOS DE VIOLENCIA BASADAS EN GÉNERO
+      Guía para la Atención de Casos de Violencia Basada en Género
     </h1>
     <ion-slides pager="true" [options]="slideOpts">
       <ion-slide *ngFor="let slide of slides">
         <img [src]="slide.src" [alt]="slide.alt" />
       </ion-slide>
     </ion-slides>
+    <p>
+      Rutas institucionales como mecanismo de prevención, atención, protección y
+      acceso a la justicia.
+    </p>
     <div class="link">
-      <ion-button routerLink="/rutas-institucionales" fill="outline"
-        >Rutas institucionale</ion-button
-      >
+      <ion-button
+        routerLink="/rutas-institucionales"
+        expand="block"
+        color="success"
+        >Rutas institucionales
+        <ion-icon slot="end" name="walk"></ion-icon>
+      </ion-button>
       <!-- <a routerLink="/rutas-institucionales">Rutas institucionales</a> -->
     </div>
     <div class="escudos">
       <img src="../../assets/img/ponal.png" alt="" />
-      <img src="../../assets/img/telm.png" alt="" />
+      <img src="../../assets/img/estel.png" alt="" />
     </div>
     <div class="final">
       <p>
