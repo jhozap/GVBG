@@ -30,3 +30,8 @@ ion-card-title {
 ion-card-content > p {
     text-align: justify;
 }
+
+ion-card > img {
+    min-width: 100%;
+    max-width: 100%;
+}
