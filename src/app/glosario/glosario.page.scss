@@ -19,6 +19,12 @@ td ul {
 table {
     width: 100% !important;
     max-width: 100% !important;
+    background-color: #a6de9b;
+    color: #000;
+}
+
+ion-card-title {
+    font-size: 15px;
 }
 
 ion-card-content > p {
