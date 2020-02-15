@@ -24,6 +24,7 @@
         <p>{{ item.definition }}</p>
         <br />
         <div *ngIf="item.detail">
+          <img [src]="item.imgDet" />
           <table>
             <tr *ngFor="let dataDet of item.detailData">
               <td>{{ dataDet.word }}</td>

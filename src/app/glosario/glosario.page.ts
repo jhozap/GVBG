@@ -31,6 +31,7 @@ export class GlosarioPage implements OnInit {
       word: 'Orientación sexual',
       definition: 'Es la atracción erótica, afectiva o emocional hacia una persona del mismo sexo o del sexo contrario, o los dos.',
       detail: true,
+      imgDet: 'assets/img/glosario/identidad.jpeg',
       detailData: [
         {
           word: 'Orientación sexual',
