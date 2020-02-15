@@ -34,7 +34,11 @@ const routes: Routes = [
   {
     path: 'creditos',
     loadChildren: () => import('./creditos/creditos.module').then( m => m.CreditosPageModule)
-  }
+  },
+  // {
+  //   path: 'modal',
+  //   loadChildren: () => import('./modal/modal.module').then( m => m.ModalPageModule)
+  // }
 ];
 
 @NgModule({
