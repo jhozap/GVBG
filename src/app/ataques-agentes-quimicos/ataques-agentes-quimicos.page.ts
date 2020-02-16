@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { ModalPage } from '../modal/modal.page';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-ataques-agentes-quimicos',
@@ -9,13 +10,20 @@ import { ModalPage } from '../modal/modal.page';
 })
 export class AtaquesAgentesQuimicosPage {
 
-  constructor(public modalController: ModalController) { }
+  constructor(public modalController: ModalController, private router: Router) { }
 
   async presentModal() {
     const modal = await this.modalController.create({
       component: ModalPage
     });
-    return await modal.present();
+
+    modal.onDidDismiss()
+    .then(()=> {
+      // console.log('redirect');
+      this.router.navigateByUrl("/ataques-agentes-quimicos");
+    });
+
+    modal.present();
   }
 
 }

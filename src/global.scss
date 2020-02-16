@@ -25,12 +25,8 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-.background {
-    min-width: 100%;
-    height: 100%;
-    background-repeat: repeat-y;
-    background-size: 100% 100%;
-    background-image: url(./assets/img/fondo.png) !important;    
+ion-content {
+    --background: #fff url(./assets/img/fondo.png) no-repeat center center / cover;
 }
 
 p {

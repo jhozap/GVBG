@@ -11,32 +11,27 @@
 </ion-header>
 
 <ion-content>
-  <div class="background">
-    <!-- <h1 class="principal-title">
-      Glosario
-    </h1> -->
-    <ion-card *ngFor="let item of glosario">
-      <img [src]="item.image" />
-      <ion-card-header>
-        <ion-card-title>{{ item.word }}</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>{{ item.definition }}</p>
-        <br />
-        <div *ngIf="item.detail">
-          <img [src]="item.imgDet" />
-          <table>
-            <tr *ngFor="let dataDet of item.detailData">
-              <td>{{ dataDet.word }}</td>
-              <td>
-                <ul>
-                  <li *ngFor="let litem of dataDet.items">{{ litem.value }}</li>
-                </ul>
-              </td>
-            </tr>
-          </table>
-        </div>
-      </ion-card-content>
-    </ion-card>
-  </div>
+  <ion-card *ngFor="let item of glosario">
+    <img [src]="item.image" />
+    <ion-card-header>
+      <ion-card-title>{{ item.word }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ item.definition }}</p>
+      <br />
+      <div *ngIf="item.detail">
+        <img [src]="item.imgDet" />
+        <table>
+          <tr *ngFor="let dataDet of item.detailData">
+            <td>{{ dataDet.word }}</td>
+            <td>
+              <ul>
+                <li *ngFor="let litem of dataDet.items">{{ litem.value }}</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
