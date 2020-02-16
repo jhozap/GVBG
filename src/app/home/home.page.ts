@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from "jquery";
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
+  searchVisible = false;
   slides = [
     {
       src: 'assets/img/1.png',
@@ -39,6 +41,23 @@ export class HomePage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  search() {
+    console.log('busqueda');
+    $(".hide").toggle("slow");
+    // this.searchVisible = true;
+  }
+
+  searchText(e) {
+    var searchTerm = $(this).val();
+        // remove any old highlighted terms
+        $('body').removeHighlight();
+        // disable highlighting if empty
+        if ( searchTerm ) {
+            // highlight the new term
+            $('body').highlight( searchTerm );
+        }
   }
 
   
