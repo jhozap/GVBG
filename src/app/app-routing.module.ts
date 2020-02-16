@@ -35,18 +35,18 @@ const routes: Routes = [
     path: 'creditos',
     loadChildren: () => import('./creditos/creditos.module').then( m => m.CreditosPageModule)
   },
-  {
-    path: 'modal-ruta-one',
-    loadChildren: () => import('./modal-ruta-one/modal-ruta-one.module').then( m => m.ModalRutaOnePageModule)
-  },
-  {
-    path: 'modal-ruta-two',
-    loadChildren: () => import('./modal-ruta-two/modal-ruta-two.module').then( m => m.ModalRutaTwoPageModule)
-  },
-  {
-    path: 'modal-ruta-three',
-    loadChildren: () => import('./modal-ruta-three/modal-ruta-three.module').then( m => m.ModalRutaThreePageModule)
-  },
+  // {
+  //   path: 'modal-ruta-one',
+  //   loadChildren: () => import('./modal-ruta-one/modal-ruta-one.module').then( m => m.ModalRutaOnePageModule)
+  // },
+  // {
+  //   path: 'modal-ruta-two',
+  //   loadChildren: () => import('./modal-ruta-two/modal-ruta-two.module').then( m => m.ModalRutaTwoPageModule)
+  // },
+  // {
+  //   path: 'modal-ruta-three',
+  //   loadChildren: () => import('./modal-ruta-three/modal-ruta-three.module').then( m => m.ModalRutaThreePageModule)
+  // },
   // {
   //   path: 'modal',
   //   loadChildren: () => import('./modal/modal.module').then( m => m.ModalPageModule)

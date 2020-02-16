@@ -1,0 +1,36 @@
+ul {
+    padding: 0 2rem;
+}
+
+ul > li {
+    text-align: justify;
+    color: #737373;
+    font-size: 14px;
+    font-family: 'Roboto', 'Helvetica Neue', 'sans-serif';
+}
+
+ion-button {
+    width: 100%;
+    font-size: 10px;
+    text-transform: none;
+}
+
+.content {
+    display: none;
+}
+
+.momento-1 {
+    --background: #04B431;
+}
+
+.momento-2 {
+    --background: #8eb133;
+}
+
+.momento-3 {
+    --background: #c4e0a3;
+}
+
+.momento-4 {
+    --background: #95ec83;
+}

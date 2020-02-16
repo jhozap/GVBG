@@ -1,9 +1,180 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>modal-ruta-one</ion-title>
+  <ion-toolbar color="success">
+    <ion-title>Ruta 1</ion-title>
+    <ion-buttons slot="end">
+      <ion-icon slot="start" name="close-circle" (click)="close()"></ion-icon>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <img src="assets/img/6.1.png" />
+  <br>
+  <br>
+  <ion-item class="momento-1" (click)="toggle(1)">
+    <ion-icon slot="end" name="chevron-up-outline" *ngIf="selected == 1"></ion-icon>
+    <ion-icon slot="end" name="chevron-down-outline" *ngIf="!(selected == 1)"></ion-icon>
+    <ion-label>
+      Momento 1:
+    </ion-label>
+  </ion-item>
+  <ion-item class="content content-1" id="content-1">
+    <ul>
+      <li>Aplicar el SEA POLICIA <i>(Saludar, Escuchar y Actuar)</i>.</li>
+      <br />
+      <li>
+        Informar a la víctima cuáles son los mecanismos de atención a los que
+        tiene derecho, contenidos en el
+        <i>"ACTA DE DERECHOS DE LAS VÍCTIMAS DE VIOLENCIAS BASADAS EN GÉNERO"</i
+        >.
+      </li>
+      <br />
+      <li>
+        Si se evidencia violencia física o sexual se debe trasladar a la víctima
+        al centro de salud más cercano. Ahora bien, si usted no percibe estas
+        violencias, pregunte a la víctima si ha recibido asistencia médica o
+        psicológica con relación a los hechos de violencia que está informando;
+        en caso de requerirlo acompáñela al servicio de salud más cercano.
+      </li>
+      <br />
+      <li>
+        Si la víctima no desea ser trasladada a los servicios de salud, deje
+        constancia en el <i>"ACTA DE REGISTRO DE CASOS"</i>.
+      </li>
+      <br />
+      <li>
+        En caso de que la víctima sea recluida en un centro de salud, el
+        uniformado o la uniformada que conoció el caso deberán coordinar con la
+        Policía Judicial la recepción de la denuncia.
+      </li>
+    </ul>
+  </ion-item>
+  <ion-item class="momento-2" (click)="toggle(2)">
+    <ion-icon slot="end" name="chevron-up-outline" *ngIf="selected == 2"></ion-icon>
+    <ion-icon slot="end" name="chevron-down-outline" *ngIf="!(selected == 2)"></ion-icon>
+    <ion-label>
+      Momento 2:
+    </ion-label>
+  </ion-item>
+  <ion-item class="content content-2" id="content-2">
+    <ul>
+      <li>
+        Diligenciar el acta de registro de casos de violencia para dar aviso
+        oficiosamente a la autoridad competente.
+      </li>
+      <br />
+      <li>
+        Si es un caso de violencia intrafamiliar debe orientar a la víctima para
+        que ponga en conocimiento los hechos ante la Comisaría de Familia.
+      </li>
+      <br />
+      <li>
+        La Comisaría de Familia es la autoridad competente y ésta deberá remitir
+        todos los casos de violencia intrafamiliar a la Fiscalía General de la
+        Nación para efectos de investigación de este delito.
+      </li>
+      <br />
+      <li>
+        Cuando la víctima requiera medida de protección, acompáñela
+        inmediatamente a la Comisaría de Familia más cercana.
+      </li>
+      <br />
+      <li>
+        En los municipios donde no exista Comisaría de Familia, ante los Jueces
+        Civiles Municipales, Jueces Promiscuos Municipales o ante los
+        Inspectores de Policía, acompáñela hasta un lugar que ella considere
+        seguro, <i>(casa de la familia o de personas amigas)</i> , esta puede
+        ser una medida de autoprotección, mientras solicita la medida de
+        protección ante autoridad competente.
+      </li>
+    </ul>
+  </ion-item>
+  <ion-item class="momento-3" (click)="toggle(3)">
+    <ion-icon slot="end" name="chevron-up-outline" *ngIf="selected == 3"></ion-icon>
+    <ion-icon slot="end" name="chevron-down-outline" *ngIf="!(selected == 3)"></ion-icon>
+    <ion-label>
+      Momento 3:
+    </ion-label>
+  </ion-item>
+  <ion-item  class="content content-3" id="content-3" lines="none">
+    <ul>
+      <li>
+        Si la víctima refiere que convive con el posible victimario y esto
+        representa un riesgo, el funcionario(a) de policía deberá informar
+        inmediatamente esta condición a la autoridad competente (Fiscales,
+        Comisarías de Familia, Jueces o Juez Promiscuo Municipal).
+      </li>
+      <br />
+      <li>
+        Se le debe informar a la víctima que tiene derecho a solicitar ingreso a
+        casa refugio en los lugares en los cuales existe esta oferta, si su
+        victimario es un riesgo potencial para su vida e integridad física.
+        <br />La Policía Nacional no podrá acompañar a la víctima a su lugar de
+        residencia sin una orden (medida de protección) de autoridad competente,
+        Decreto 4799:
+        <i
+          >"Ordenar a la autoridad de Policía, previa solicitud de la víctima,
+          el acompañamiento para el reingreso al lugar de domicilio cuando ella
+          se halla visto en la obligación de salir para proteger su
+          seguridad"</i
+        >
+      </li>
+      <br />
+      <li>
+        Informe a la víctima de otras medidas de autoprotección como el cambio
+        de rutinas, de las guardas de la casa o del número de celular. Si la
+        víctima manifiesta tener un proceso de divorcio o separación de bienes
+        en trámite, o una investigación penal en curso por violencia
+        intrafamiliar, la competencia para dictar la medida de protección es del
+        Juez que conoce el caso (Ley 1257 de 2008, Art.17, Par. 1, 2).
+      </li>
+      <br />
+      <li>
+        Cuando la víctima requiera medida de protección, acompáñela
+        inmediatamente a la Comisaría de Familia más cercana.
+      </li>
+      <br />
+      <li>
+        En caso de presentarse algún tipo de violencia contra la víctima
+        garantice la protección de su integridad, tal como lo expresa el Código
+        Nacional de Policía y Convivencia, Art. 166.
+        <i
+          >"Uso de la fuerza, es el medio material, necesario, proporcional y
+          racional, empleado por el personal uniformado de la Policía Nacional,
+          como último recurso físico para proteger la vida e integridad física
+          de las personas, incluida la de ellos mismos, sin mandamiento previo y
+          escrito, para prevenir, impedir o superar la amenaza o perturbación de
+          la convivencia y la seguridad pública, de conformidad con la ley"</i
+        >
+      </li>
+    </ul>        
+  </ion-item>
+  <ion-item *ngIf="selected == 3">
+    <ion-button expand="block">¡El uso de la fuerza se podrá dar <br>en los siguientes casos!</ion-button>
+  </ion-item>
+  <ion-item class="momento-4" (click)="toggle(4)">
+    <ion-icon slot="end" name="chevron-up-outline" *ngIf="selected == 4"></ion-icon>
+    <ion-icon slot="end" name="chevron-down-outline" *ngIf="!(selected == 4)"></ion-icon>
+    <ion-label>
+      Momento 4:
+    </ion-label>
+  </ion-item>
+  <ion-item class="content content-4" id="content-4" lines="none">
+    <ul>
+      <li>
+        Cuando la víctima de violencia forme parte de una comunidad indígena, tiene el derecho a recurrir ante la autoridad indígena o la autoridad de policía para la atención de su caso.
+      </li>
+      <br />
+      <li>
+        En los casos de violencia sexual tenga en cuenta lo establecido en la Ley 1719 de 2014 por la cual se modifican algunos artículos de las Leyes 599 de 2000 y la ley 906 de 2004, en la cual se adoptan medidas para garantizar el acceso a la justica de las víctimas de violencia sexual, en especial la violencia sexual con ocasión del conflicto armado. Asi como lo establecido en el procedimiento para atender casos con víctimas de agresiones sexuales 2IJ-PR-0002.
+      </li>
+      <br />
+      <li>
+        Informar a la víctima de violencia que los hechos serán investigados de oficio por las autoridades judiciales. (Ley 1826/17, Art. 5).
+      </li>      
+    </ul>        
+  </ion-item>
+  <ion-item *ngIf="selected == 4">
+    <ion-button expand="block">¡Para tener en cuenta!</ion-button>
+  </ion-item>
 </ion-content>

@@ -4,16 +4,13 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ModalRutaThreePageRoutingModule } from './modal-ruta-three-routing.module';
-
 import { ModalRutaThreePage } from './modal-ruta-three.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    IonicModule,
-    ModalRutaThreePageRoutingModule
+    IonicModule
   ],
   declarations: [ModalRutaThreePage]
 })
