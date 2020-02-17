@@ -19,7 +19,6 @@ export class AtaquesAgentesQuimicosPage {
 
     modal.onDidDismiss()
     .then(()=> {
-      // console.log('redirect');
       this.router.navigateByUrl("/ataques-agentes-quimicos");
     });
 

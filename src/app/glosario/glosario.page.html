@@ -5,19 +5,61 @@
     </ion-buttons>
     <ion-buttons slot="end">
       <ion-icon slot="start" name="help"></ion-icon>
+      <ion-icon slot="end" name="search" (click)="search()"></ion-icon>
     </ion-buttons>
     <ion-title>Glosario</ion-title>
   </ion-toolbar>
+  <div class="hide">
+    <ion-toolbar color="success">
+      <ion-searchbar
+        id="input"
+        placeholder="Buscar"
+        (ionChange)="find($event)"
+        animated
+      ></ion-searchbar>
+    </ion-toolbar>
+  </div>
 </ion-header>
 
 <ion-content>
+  <!-- <div *ngFor="let item of [{name: 'a'}, {name: 'b'}]">{{item.name}}</div> -->
+  
+  <!-- <ion-card>
+    <img src="assets/img/glosario/sexo2.png" />
+    <ion-card-header>
+      <ion-card-title>Prueba</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maiores
+        officia perferendis dolorum perspiciatis. Magnam, similique obcaecati.
+        Facilis neque laudantium nihil. Perferendis architecto magni qui enim
+        exercitationem asperiores pariatur sint?
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img src="assets/img/glosario/sexo2.png" />
+    <ion-card-header>
+      <ion-card-title>Sexo</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        esto es un texto de pruebas de la busqueda
+      </p>
+    </ion-card-content>
+  </ion-card> -->
   <ion-card *ngFor="let item of glosario">
     <img [src]="item.image" />
     <ion-card-header>
-      <ion-card-title>{{ item.word }}</ion-card-title>
+      <div>
+        <ion-card-title>{{ item.word }}</ion-card-title>
+      </div>      
     </ion-card-header>
     <ion-card-content>
-      <p>{{ item.definition }}</p>
+      <div>
+        <p>{{ item.definition }}</p>
+      </div>      
       <br />
       <div *ngIf="item.detail">
         <img [src]="item.imgDet" />

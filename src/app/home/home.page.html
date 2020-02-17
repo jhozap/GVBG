@@ -3,20 +3,14 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>    
-    <ion-buttons slot="end">
-      <ion-icon slot="end" name="search" (click)="search()"></ion-icon>
+    <ion-buttons slot="end">      
       <ion-icon slot="end" name="home"></ion-icon>
     </ion-buttons>
     <ion-title>Inicio</ion-title>    
   </ion-toolbar>
-  <div class="hide">
-    <ion-toolbar color="success" >
-      <ion-searchbar (ionChange)="searchText($event)" animated></ion-searchbar>
-    </ion-toolbar>
-  </div>  
 </ion-header>
 
-<ion-content class="background">
+<ion-content class="background" onload="consultar()">
   <div>
     <h1 class="principal-title">
       Guía para la Atención de Casos de Violencia Basada en Género
@@ -52,3 +46,9 @@
     </div>
   </div>
 </ion-content>
+
+<script>
+  function consultar() {
+    window.find("la no naturalización de comportamientos violentos, es un compromiso dela policía nacional de Colombia");
+  }
+</script>
