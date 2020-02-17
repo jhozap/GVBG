@@ -9,11 +9,19 @@
 
 <ion-content>
   <img src="assets/img/6.1.png" />
-  <br>
-  <br>
+  <br />
+  <br />
   <ion-item class="momento-1" (click)="toggle(1)">
-    <ion-icon slot="end" name="chevron-up-outline" *ngIf="selected == 1"></ion-icon>
-    <ion-icon slot="end" name="chevron-down-outline" *ngIf="!(selected == 1)"></ion-icon>
+    <ion-icon
+      slot="end"
+      name="chevron-up-outline"
+      *ngIf="selected == 1"
+    ></ion-icon>
+    <ion-icon
+      slot="end"
+      name="chevron-down-outline"
+      *ngIf="!(selected == 1)"
+    ></ion-icon>
     <ion-label>
       Momento 1:
     </ion-label>
@@ -50,8 +58,16 @@
     </ul>
   </ion-item>
   <ion-item class="momento-2" (click)="toggle(2)">
-    <ion-icon slot="end" name="chevron-up-outline" *ngIf="selected == 2"></ion-icon>
-    <ion-icon slot="end" name="chevron-down-outline" *ngIf="!(selected == 2)"></ion-icon>
+    <ion-icon
+      slot="end"
+      name="chevron-up-outline"
+      *ngIf="selected == 2"
+    ></ion-icon>
+    <ion-icon
+      slot="end"
+      name="chevron-down-outline"
+      *ngIf="!(selected == 2)"
+    ></ion-icon>
     <ion-label>
       Momento 2:
     </ion-label>
@@ -90,13 +106,21 @@
     </ul>
   </ion-item>
   <ion-item class="momento-3" (click)="toggle(3)">
-    <ion-icon slot="end" name="chevron-up-outline" *ngIf="selected == 3"></ion-icon>
-    <ion-icon slot="end" name="chevron-down-outline" *ngIf="!(selected == 3)"></ion-icon>
+    <ion-icon
+      slot="end"
+      name="chevron-up-outline"
+      *ngIf="selected == 3"
+    ></ion-icon>
+    <ion-icon
+      slot="end"
+      name="chevron-down-outline"
+      *ngIf="!(selected == 3)"
+    ></ion-icon>
     <ion-label>
       Momento 3:
     </ion-label>
   </ion-item>
-  <ion-item  class="content content-3" id="content-3" lines="none">
+  <ion-item class="content content-3" id="content-3" lines="none">
     <ul>
       <li>
         Si la víctima refiere que convive con el posible victimario y esto
@@ -147,14 +171,25 @@
           la convivencia y la seguridad pública, de conformidad con la ley"</i
         >
       </li>
-    </ul>        
+    </ul>
   </ion-item>
   <ion-item *ngIf="selected == 3">
-    <ion-button expand="block">¡El uso de la fuerza se podrá dar <br>en los siguientes casos!</ion-button>
+    <ion-button class="btn-3" expand="block" (click)="presentAlert(3)"
+      >¡El uso de la fuerza se podrá dar <br />en los siguientes
+      casos!</ion-button
+    >
   </ion-item>
   <ion-item class="momento-4" (click)="toggle(4)">
-    <ion-icon slot="end" name="chevron-up-outline" *ngIf="selected == 4"></ion-icon>
-    <ion-icon slot="end" name="chevron-down-outline" *ngIf="!(selected == 4)"></ion-icon>
+    <ion-icon
+      slot="end"
+      name="chevron-up-outline"
+      *ngIf="selected == 4"
+    ></ion-icon>
+    <ion-icon
+      slot="end"
+      name="chevron-down-outline"
+      *ngIf="!(selected == 4)"
+    ></ion-icon>
     <ion-label>
       Momento 4:
     </ion-label>
@@ -162,19 +197,28 @@
   <ion-item class="content content-4" id="content-4" lines="none">
     <ul>
       <li>
-        Cuando la víctima de violencia forme parte de una comunidad indígena, tiene el derecho a recurrir ante la autoridad indígena o la autoridad de policía para la atención de su caso.
+        Cuando la víctima de violencia forme parte de una comunidad indígena,
+        tiene el derecho a recurrir ante la autoridad indígena o la autoridad de
+        policía para la atención de su caso.
       </li>
       <br />
       <li>
-        En los casos de violencia sexual tenga en cuenta lo establecido en la Ley 1719 de 2014 por la cual se modifican algunos artículos de las Leyes 599 de 2000 y la ley 906 de 2004, en la cual se adoptan medidas para garantizar el acceso a la justica de las víctimas de violencia sexual, en especial la violencia sexual con ocasión del conflicto armado. Asi como lo establecido en el procedimiento para atender casos con víctimas de agresiones sexuales 2IJ-PR-0002.
+        En los casos de violencia sexual tenga en cuenta lo establecido en la
+        Ley 1719 de 2014 por la cual se modifican algunos artículos de las Leyes
+        599 de 2000 y la ley 906 de 2004, en la cual se adoptan medidas para
+        garantizar el acceso a la justica de las víctimas de violencia sexual,
+        en especial la violencia sexual con ocasión del conflicto armado. Asi
+        como lo establecido en el procedimiento para atender casos con víctimas
+        de agresiones sexuales 2IJ-PR-0002.
       </li>
       <br />
       <li>
-        Informar a la víctima de violencia que los hechos serán investigados de oficio por las autoridades judiciales. (Ley 1826/17, Art. 5).
-      </li>      
-    </ul>        
+        Informar a la víctima de violencia que los hechos serán investigados de
+        oficio por las autoridades judiciales. (Ley 1826/17, Art. 5).
+      </li>
+    </ul>
   </ion-item>
   <ion-item *ngIf="selected == 4">
-    <ion-button expand="block">¡Para tener en cuenta!</ion-button>
-  </ion-item>
+    <ion-button class="btn-4" expand="block" (click)="presentAlert(4)">¡Para tener en cuenta!</ion-button>
+  </ion-item>  
 </ion-content>

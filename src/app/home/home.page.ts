@@ -1,34 +1,34 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 import * as $ from "jquery";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.page.html',
-  styleUrls: ['./home.page.scss'],
+  selector: "app-home",
+  templateUrl: "./home.page.html",
+  styleUrls: ["./home.page.scss"]
 })
 export class HomePage implements OnInit {
-
+  [x: string]: any;
   searchVisible = false;
   slides = [
     {
-      src: 'assets/img/1.png',
-      alt: 'Slide 1'
+      src: "assets/img/1.png",
+      alt: "Slide 1"
     },
     {
-      src: 'assets/img/2.png',
-      alt: 'Slide 2'
+      src: "assets/img/2.png",
+      alt: "Slide 2"
     },
     {
-      src: 'assets/img/3.png',
-      alt: 'Slide 3'
+      src: "assets/img/3.png",
+      alt: "Slide 3"
     },
     {
-      src: 'assets/img/4.png',
-      alt: 'Slide 4'
+      src: "assets/img/4.png",
+      alt: "Slide 4"
     },
     {
-      src: 'assets/img/5.png',
-      alt: 'Slide 5'
+      src: "assets/img/5.png",
+      alt: "Slide 5"
     }
   ];
 
@@ -38,28 +38,13 @@ export class HomePage implements OnInit {
     autoplay: true
   };
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
-  search() {
-    console.log('busqueda');
-    $(".hide").toggle("slow");
-    // this.searchVisible = true;
-  }
+  ngOnInit() {}
 
   searchText(e) {
-    var searchTerm = $(this).val();
-        // remove any old highlighted terms
-        $('body').removeHighlight();
-        // disable highlighting if empty
-        if ( searchTerm ) {
-            // highlight the new term
-            $('body').highlight( searchTerm );
-        }
+    console.log(e);
+    console.log(e.detail.value);
   }
-
   
-
 }

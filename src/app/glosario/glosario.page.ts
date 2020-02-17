@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as $ from "jquery";
 
 @Component({
   selector: 'app-glosario',
@@ -151,6 +152,33 @@ export class GlosarioPage implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  search() {
+    console.log("busqueda");
+    $(".hide").toggle("slow");
+  }
+
+  find(e) {
+    console.log(e); 
+    console.log(e.detail.value); 
+
+
+    $( "div:contains("+e.detail.value+")" ).css({"text-decoration": "underline", "background-color": "red"});
+    // $( "div:not(:contains("+e.detail.value+"))" ).css( "text-decoration", "none" );
+
+    // $("ion-card-title:contains(" + e.detail.value + ")").css({"text-decoration": "underline"});
+    // $("p:contains(" + e.detail.value + ")").css({"text-decoration": "underline"});
+
+    // $("ion-card-title:not(:contains(" + e.detail.value + "))").css({"text-decoration": "underline"});
+    // $("p:not(:contains("+ e.detail.value +"))").css({"text-decoration": "none"});
+
+    if(e.detail.value == "") {
+      $("ion-card-title").css({"text-decoration": "none"});
+      $("p").css({"text-decoration": "none"});
+      $("div").css({"text-decoration": "none"});
+    }
+    // console.log(e.datail.value);
   }
 
 }
