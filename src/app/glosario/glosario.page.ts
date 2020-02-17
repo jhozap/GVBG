@@ -169,16 +169,16 @@ export class GlosarioPage implements OnInit {
   find(e) {
     console.log(e); 
     console.log(e.detail.value); 
-
+    
     this.glosario.forEach((x)=> {
       x.word.replace(new RegExp(e.detail.value, "gi"), match =>{     
-        debugger;    
+          
         let cns ='<span class="highlightText">' + match + '</span>';
         return cns;
       });
     });
 
-
+    this.subrayar(e.detail.value);
     // $( "div:contains("+e.detail.value+")" ).css({"text-decoration": "underline", "background-color": "red"});
     
 
@@ -189,5 +189,18 @@ export class GlosarioPage implements OnInit {
     // }
     // console.log(e.datail.value);
   }
+
+  subrayar (text) {
+    
+    var inputText = document.getElementById("inputText");
+    var innerHTML = inputText.innerHTML;
+    var index = innerHTML.indexOf(text);
+    if (index >= 0) { 
+     innerHTML = innerHTML.substring(0,index) + "<span class='highlight'>" + innerHTML.substring(index,index+text.length) + "</span>" + innerHTML.substring(index + text.length);
+     inputText.innerHTML = innerHTML;
+  }
+  console.log(innerHTML);
+  
+}
 
 }

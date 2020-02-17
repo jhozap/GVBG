@@ -1,3 +1,9 @@
+
+<button (click)="subrayar('fox')">Highlight</button>
+
+<div id="inputTextss">
+  The fox went over the fence
+</div>
 <ion-header>
   <ion-toolbar color="success">
     <ion-buttons slot="start">
@@ -58,17 +64,17 @@
     </ion-card-header>
     <ion-card-content>
       <div>
-        <p>{{ item.definition }}</p>
+        <p id="inputText">{{ item.definition }}</p>
       </div>      
       <br />
       <div *ngIf="item.detail">
         <img [src]="item.imgDet" />
         <table>
           <tr *ngFor="let dataDet of item.detailData">
-            <td>{{ dataDet.word }}</td>
+            <td id="inputText">{{ dataDet.word }}</td>
             <td>
               <ul>
-                <li *ngFor="let litem of dataDet.items">{{ litem.value }}</li>
+                <li *ngFor="let litem of dataDet.items" id="inputText">{{ litem.value }}</li>
               </ul>
             </td>
           </tr>
@@ -76,4 +82,9 @@
       </div>
     </ion-card-content>
   </ion-card>
+
+
 </ion-content>
+
+
+
