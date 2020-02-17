@@ -168,16 +168,7 @@ export class GlosarioPage implements OnInit {
 
   find(e) {
     console.log(e); 
-    console.log(e.detail.value); 
-
-    this.glosario.forEach((x)=> {
-      x.word.replace(new RegExp(e.detail.value, "gi"), match =>{     
-        debugger;    
-        let cns ='<span class="highlightText">' + match + '</span>';
-        return cns;
-      });
-    });
-
+    console.log(e.detail.value);    
 
     // $( "div:contains("+e.detail.value+")" ).css({"text-decoration": "underline", "background-color": "red"});
     
