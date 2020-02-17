@@ -4,7 +4,9 @@ ion-card-title {
 }
 
 .link {
-    font-size: 10px;
+    font-size: 13px;
+    padding: 0;
+    min-height: 45px !important;
 }
 
 .one {
@@ -20,4 +22,8 @@ ion-card-title {
 .three {
     --background: #C4E0A3;
     --color: #333333;
+}
+
+ion-button {
+    margin: 2rem 0;
 }

@@ -25,7 +25,7 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-ion-content {
+ion-content, ion-menu {
     --background: #fff url(./assets/img/fondo.png) no-repeat center center / cover;
 }
 
@@ -38,9 +38,10 @@ ion-title {
 }
 
 .principal-title {
-    font-size: 10pt;
+    font-size: 15pt;
     font-weight: bold;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .highlight {

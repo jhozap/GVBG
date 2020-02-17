@@ -1,6 +1,7 @@
 ion-menu {
   ion-content {
-    --background: var(--ion-item-background, var(--ion-background-color, #fff));
+    // --background: var(--ion-item-background, var(--ion-background-color, #fff));
+    --background: #fff url(../assets/img/fondo.png) no-repeat center center / cover;
   }
 }
 
@@ -10,10 +11,12 @@ ion-menu.md {
     --padding-end: 8px;
     --padding-top: 20px;
     --padding-bottom: 20px;
+    --background: transparent;
   }
 
   ion-list {
     padding: 20px 0;
+    background-color: transparent;
   }
 
   ion-note {
@@ -128,4 +131,8 @@ ion-item.selected {
 
 .logo-menu {
   opacity: 0.5;
+}
+
+ion-item, a {
+  --background: transparent !important;
 }
