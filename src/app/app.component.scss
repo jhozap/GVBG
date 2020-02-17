@@ -121,8 +121,13 @@ ion-note {
   color: var(--ion-color-medium-shade);
 }
 
+ion-item {
+  border-bottom: 1px solid transparent;
+}
+
 ion-item.selected {
   --color: var(--ion-color-success);
+  border-bottom: 1px solid var(--ion-color-success);
 }
 
 .my-custom-menu {

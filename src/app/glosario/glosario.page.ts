@@ -170,15 +170,23 @@ export class GlosarioPage implements OnInit {
     console.log(e); 
     console.log(e.detail.value); 
 
+    this.glosario.forEach((x)=> {
+      x.word.replace(new RegExp(e.detail.value, "gi"), match =>{     
+        debugger;    
+        let cns ='<span class="highlightText">' + match + '</span>';
+        return cns;
+      });
+    });
 
-    $( "div:contains("+e.detail.value+")" ).css({"text-decoration": "underline", "background-color": "red"});
+
+    // $( "div:contains("+e.detail.value+")" ).css({"text-decoration": "underline", "background-color": "red"});
     
 
-    if(e.detail.value == "") {
-      // $("ion-card-title").css({"text-decoration": "none", "background-color": "#fff"});
-      // $("p").css({"text-decoration": "none", "background-color": "#fff"});
-      $("div").css({"text-decoration": "none", "background-color": "#fff"});
-    }
+    // if(e.detail.value == "") {
+    //   // $("ion-card-title").css({"text-decoration": "none", "background-color": "#fff"});
+    //   // $("p").css({"text-decoration": "none", "background-color": "#fff"});
+    //   $("div").css({"text-decoration": "none", "background-color": "#fff"});
+    // }
     // console.log(e.datail.value);
   }
 

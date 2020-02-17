@@ -10,7 +10,19 @@ export class ModalRutaTwoPage implements OnInit {
 
   constructor(public modalController: ModalController) { }
 
+  selected = 0;
+
   ngOnInit() {
+  }
+
+  toggle(index) {
+    $(".forma-" + this.selected).toggle("slow");
+    if (index != this.selected) {
+      $(".forma-" + index).toggle("slow");
+      this.selected = index;
+    } else {
+      this.selected = 0;
+    }
   }
 
   close() {
