@@ -34,3 +34,15 @@ p {
     --background: #FE9A2E;
     --color: #000;
 }
+
+.content {
+    display: none;
+}
+
+.btn-4 {
+    --background: #FE9A2E;
+    --color: #000;
+    font-size: 13px;
+    padding: 0;
+    min-height: 45px !important;
+}

@@ -8,5 +8,201 @@
 </ion-header>
 
 <ion-content>
+  <img src="assets/img/8.1.png" />
+  <br />
+  <br />
+  <ion-card>
+    <ion-card-content>
+      <p>
+        En ningún caso suministre información de la víctima ante los medios de
+        comunicación sin su autorización, so pena de incurrir en una afectación
+        a la intimidad como derecho fundamental. Un hecho flagrante es un hecho
+        del que se conoce en el preciso instante en que sucede.
+      </p>
+      <br />
+      <p>
+        Para los propósitos de esta Guía, cuando se habla de un hecho de VBG en
+        flagrancia, se trata de un hecho del que tiene conocimiento la Policía
+        Nacional en el MOMENTO en el que se está cometiendo. En ese sentido la
+        flagrancia puede darse en dos formas:
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-item class="forma-1" (click)="toggle(1)">
+    <ion-icon
+      slot="end"
+      name="chevron-up-outline"
+      *ngIf="selected == 1"
+    ></ion-icon>
+    <ion-icon
+      slot="end"
+      name="chevron-down-outline"
+      *ngIf="!(selected == 1)"
+    ></ion-icon>
+    <ion-label>
+      Forma 1:
+    </ion-label>
+  </ion-item>
+  <div class="content content-1" id="content-1">
+    <ion-item lines="none">
+      <p>
+        Cuando se conoce de un caso de VBG en flagrancia con base en un reporte
+        de la ciudadanía. Frente a este caso la Institución debe proceder de la
+        siguiente manera:
+      </p>
+    </ion-item>
+    <ion-item>
+      <ul>
+        <li>
+          Dirigirse al lugar donde según el reporte de la ciudadanía se está
+          cometiendo el hecho, cerciorándose que se trata efectivamente de un
+          caso de VBG.
+        </li>
+        <br />
+        <li>
+          Si es un caso de VBG, debe darle a conocer a la víctima sus derechos y
+          prestarle la ayuda correspondiente, siguiendo lo descrito en los
+          numerales 1.1, 1.2, y 1.3 de la Ruta 1 de la que trata la presente
+          Guía, en cumplimiento de la Ley 360 de 1997 Art. 15; Ley 906 de 2004
+          Art. 11 y Ley 1257 de 2008 Art. 8.
+        </li>
+        <br />
+        <li>
+          Para el tratamiento de necesidades inmediatas de salud y en atención a
+          la gravedad de la afectación, el personal de vigilancia que asume el
+          caso puede solicitar el envío de una ambulancia para la conducción de
+          la víctima.
+        </li>
+        <br />
+        <li>
+          Si se presenta captura, notifique a la persona capturada sobre sus
+          derechos, según lo establecido en el artículo 303 CPP, y déjela a
+          disposición de la Fiscalía General de la Nación, para el
+          diligenciamiento del acta de buen trato.
+        </li>
+        <br />
+        <li>
+          Se debe preservar la escena de los hechos y en particular proteger los
+          elementos que se constituyan como materia de prueba, para que sean
+          posteriormente entregados a la Policía Judicial (embalaje y rotulado
+          EMP - EF).
+        </li>
+        <br />
+        <li>
+          Diligencie el formato de actuación del primer respondiente - FPJ4 y
+          acta de registro y allanamiento - FPJ15; conserve una copia.
+        </li>
+        <br />
+        <li>
+          Si la víctima afectada decide adelantar gestiones para su protección y
+          la Policía Nacional considera que su situación reviste riesgo, deberá
+          acompañarla a la entidad competente de acuerdo con la vía que ella
+          decida adoptar (Fiscalía /Comisaría).
+        </li>
+        <br />
+        <li>
+          Si la víctima es menor de edad o en el caso se encuentran
+          involucrados-as NNA, se debe coordinar con Policía de Infancia y
+          Adolescencia para el restablecimiento de sus derechos.
+        </li>
+        <br />
+        <li>
+          En caso de violencia contra la mujer debe realizarse el procedimiento
+          según lo estipulado en la ley 1257 de 2008 y la denuncia debe
+          realizarse mediante oficio en caso de que la víctima desista de
+          interponer la misma. En todo caso, el policía deberá realizar un
+          informe de lo actuado y lo remitirá a las autoridades competentes.
+        </li>
+        <br />
+        <li>
+          Si la víctima es menor de dieciocho (18) años solicite el
+          acompañamiento y asesoría de la Policía de Infancia y Adolescencia.
+        </li>
+        <br />
+        <li>
+          En caso de que el posible victimario sea un adolescente mayor de 14
+          años realice el procedimiento respectivo en la Fiscalía Especializada
+          para ellos CESPA. Si el victimario es menor de edad se debe coordinar
+          con Policía de Infancia y Adolescencia para realizar la aprehensión.
+        </li>
+        <br />
+        <li>
+          Dejar a disposición de la Fiscalía, en los términos establecidos por
+          la Ley.
+        </li>
+        <br />
+        <li>
+          Si en el territorio donde se está produciendo el hecho no existiere
+          policía judicial, el personal de vigilancia que asumió el caso deberá
+          adelantar las siguientes funciones en coherencia con el CPP, Art. 205;
+          así:
+        </li>
+        <br />
+        <ul>
+          <li>
+            Entrevistar a las personas que pudieron haber presenciado los
+            hechos, para prevenir el silencio y la retractación.
+          </li>
+          <br />
+          <li>
+            En caso de entrevistas a NNA solicite el acompañamiento del
+            defensor-a de familia, o quien haga sus veces.
+          </li>
+          <br />
+          <li>
+            Tomar fotos (fijación de la escena, realizar la recolección,
+            embalaje, rotulado de los elementos de prueba o evidencia)
+          </li>
+          <br />
+          <li>
+            Remitir la información de lo actuado a la Fiscalía General de la
+            Nación, adjuntando copia del acta de registro de casos.
+          </li>
+        </ul>
+      </ul>
+    </ion-item>
+  </div>
 
+  <ion-item class="forma-2" (click)="toggle(2)">
+    <ion-icon
+      slot="end"
+      name="chevron-up-outline"
+      *ngIf="selected == 2"
+    ></ion-icon>
+    <ion-icon
+      slot="end"
+      name="chevron-down-outline"
+      *ngIf="!(selected == 2)"
+    ></ion-icon>
+    <ion-label>
+      Forma 2:
+    </ion-label>
+  </ion-item>
+  <div class="content content-2" id="content-2">
+    <ion-item lines="none">
+      <p>
+        Cuando un miembro de la Policía Nacional conoce directamente y por sus
+        propios medios de un caso de VBG que se está cometiendo en flagrancia,
+        debe conducir el procedimiento bajo los pasos anotados en el numeral
+        anterior.
+      </p>
+    </ion-item>
+    <ion-item>
+      <p>
+        Sin embargo, en estos casos debe tomar especial atención la manera como
+        se aborda la víctima; en particular, debe propender en todo MOMENTO por
+        garantizar las condiciones de privacidad y discreción que ameritan este
+        tipo de circunstancias, así como ofrecer un trato respetuoso y amable
+        que refleje disposición de servicio, y genere tranquilidad y confianza
+        en la víctima, todo lo que además permitirá que la misma provea la
+        información necesaria y suficiente para apoyarle y facilitar su
+        atención.
+      </p>
+    </ion-item>
+    <ion-item>
+      <ion-button class="btn btn-4" expand="block" (click)="presentAlert()"
+        >¡Para tener en cuenta!</ion-button
+      >
+    </ion-item>
+  </div>
 </ion-content>

@@ -1,6 +1,8 @@
 <ion-header>
   <ion-toolbar color="success">
-    <ion-title>RUTA 2: Cuando se trata de <br>un caso en flagrancia</ion-title>
+    <ion-title
+      >RUTA 2: Cuando se trata de <br />un caso en flagrancia</ion-title
+    >
     <ion-buttons slot="end">
       <ion-icon slot="start" name="close-circle" (click)="close()"></ion-icon>
     </ion-buttons>
@@ -178,8 +180,8 @@
       Forma 2:
     </ion-label>
   </ion-item>
-  <div>
-    <ion-item class="content content-2" id="content-2">
+  <div class="content content-2" id="content-2">
+    <ion-item lines="none">
       <p>
         Cuando un miembro de la Policía Nacional conoce directamente y por sus
         propios medios de un caso de VBG que se está cometiendo en flagrancia,
@@ -200,7 +202,7 @@
       </p>
     </ion-item>
     <ion-item>
-      <ion-button class="btn" expand="block" 
+      <ion-button class="btn btn-4" expand="block" (click)="presentAlert()"
         >¡Para tener en cuenta!</ion-button
       >
     </ion-item>
