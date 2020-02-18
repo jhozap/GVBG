@@ -1,0 +1,48 @@
+.medida-1 {
+    --background: #04B431;
+}
+
+.medida-2 {
+    --background: #8eb133;
+}
+
+.medida-3 {
+    --background: #c4e0a3;
+}
+
+ul {
+    padding: 0 2rem;
+}
+
+ul > li {
+    text-align: justify;
+    color: #737373;
+    font-size: 14px;
+    font-family: 'Roboto', 'Helvetica Neue', 'sans-serif';
+}
+
+ion-button {
+    width: 100%;
+    font-size: 10px;
+    text-transform: none;
+}
+
+p {
+    text-align: justify;
+    color: #737373;
+    font-size: 14px;
+    font-family: 'Roboto', 'Helvetica Neue', 'sans-serif';
+}
+
+// .btn {
+//     --background: #FE9A2E;
+//     --color: #000;
+// }
+
+.content {
+    display: none;
+}
+
+ion-label {
+    font-size: 14px !important;
+}
