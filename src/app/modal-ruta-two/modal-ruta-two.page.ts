@@ -44,7 +44,7 @@ export class ModalRutaTwoPage implements OnInit {
     }
   }
 
-  async presentAlert(i) {
+  async presentAlert() {
     const alert = await this.alertController.create({
       header: "Para tener en cuenta",
       message: this.alerta,
